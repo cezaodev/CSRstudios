@@ -1,0 +1,35 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --verde-escuro: #14424b;
+  --verde: #6caf00;
+  --laranja: #ff6817;
+  --degrade: linear-gradient(#ff9b3e, #fd6500);
+  --color-p: #a1a1a1;
+  --color-p-2: rgb(114, 114, 114);
+}
+
+.btn-gradiente {
+  padding: 10px 25px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-image: var(--degrade);
+}
+
+section,
+footer {
+  padding: 2.7rem 0;
+}
+
+p {
+  color: var(--color-p);
+}

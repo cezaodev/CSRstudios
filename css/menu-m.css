@@ -1,0 +1,134 @@
+.menu-icon {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 960px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .ul {
+    position: fixed;
+    background: var(--verde-escuro);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ul li {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .ul.ativo {
+    left: 0;
+  }
+
+  main .container {
+    flex-direction: column;
+  }
+
+  main .container .main-text,
+  main .container .main-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  main .container .main-text h1 {
+    font-size: 4rem;
+  }
+
+  main .container .main-text div {
+    justify-content: center;
+  }
+
+  .resultados .container {
+    flex-direction: column;
+  }
+
+  .resultados .resultados-text,
+  .resultados .resultados-numero {
+    width: 100%;
+    text-align: center;
+  }
+
+  .resultados-numero {
+    margin-top: 30px;
+  }
+
+  .diferenciais .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .diferenciais .card {
+    width: 100%;
+  }
+
+  .casa .container {
+    flex-direction: column-reverse;
+  }
+
+  .casa .casa-text,
+  .casa .casa-img {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .melhores-lugares .cards {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+  }
+
+  .melhores-lugares .cards .card-item {
+    width: 100%;
+  }
+
+  .lista-email .box-lista-email {
+    padding: 50px;
+  }
+
+  .lista-email .box-lista-email h2 {
+    font-size: 2rem;
+  }
+
+  .lista-email .box-lista-email input {
+    width: 100%;
+  }
+
+  .lista-email .box-lista-email button {
+    width: 50%;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .container .ul {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 440px) {
+  .resultados .resultados-numero {
+    flex-direction: column;
+  }
+
+  main .container .main-text h1 {
+    font-size: 3rem;
+  }
+}
